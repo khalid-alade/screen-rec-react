@@ -4,6 +4,7 @@ import React, { useState} from 'react';
 
 export default function ScreenRec() {
     const [vid_src, setSrc] = useState('')
+    setSrc('')
     return (
         <div>
             <nav>
