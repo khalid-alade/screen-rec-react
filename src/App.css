@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 100%;
+  /* font-weight: bold; */
+}
+nav p:hover{
+  transition: 0.3s;
+  cursor: pointer;
+  color: rgb(4, 144, 144);
+}
+.mid-span{
+  width: 19%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px 40px;
+}
+.sect1{
+  width: 30%;
+  padding-right: 40px;
+  min-height: 100%;
+}
+
+.name-binder{
+  margin-top: 25px;
+}
+.name-binder-p{
+  font-size: small;
+}
+.h-3{
+  font-weight: 500;
+  color: rgb(81, 81, 81);
+}
+.name-untitled{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.name-untitled-svg{
+  color: rgb(81, 81, 81);
+  margin-left: 20px;
+}
+.enter-email{
+  margin-top: 25px;
+  background-color: rgb(232, 226, 234);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+input{
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  width: 100%;
+  padding: 0 7px;
+}
+.send-to-email{
+  background-color: rgb(105, 5, 105);
+  color: white;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+.share-your-binder{
+  margin-top: 25px;
+}
+.share-your{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.share-your-p{
+  font-weight: bold;
+  font-size: small;
+  margin-bottom: 4px;
+}
+.share1{
+  border: 1.5px solid rgb(81, 81, 81);
+  padding: 8px 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 31%;
+}
+.share1-p{
+  font-size: small;
+  margin-left: 4px;
+}
+.share1 svg{
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5px;
+}
+.vid-url{
+  border-radius: 7px;
+  background-color: rgb(232, 226, 234);
+  padding: 10px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  /* overflow-x: scroll; */
+}
+.video-url{
+  width: 80%;
+  padding: 0 10px;
+  font-size: x-small;
+  font-weight: bold;
+}
+.vid-btn{
+  /* background-color: rgb(105, 5, 105); */
+  /* width: 20%; */
+  padding: 7px 7px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  /* color: white; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  transition: o.3s;
+  background-color: whitesmoke;
+  justify-content: space-between;
+}
+.vid-btn:hover{
+  background-color: rgb(212, 209, 209);
+}
+.vid-btn svg{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.recorded-video{
+  width: 100%;
+  border-radius: 10px;
+}
+.sect2{
+  width: 70%;
+  padding-left: 40px;
+  border-left: 2px solid grey;
+}
+.tran-bind{
+  margin-top: 25px;
+}
+.tran{
+  margin-top: 10px;
+  position: relative;
+  height: 200px;
+  /* background-color: pink; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.tran-item{
+  display: grid;
+  grid-template-columns: 5% 95%;
+  gap: 10px;
+  margin-top: 10px;
+}
+.tran-fade{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  opacity: 0.7;
+}
+.on-footer{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: whitesmoke;
+}
+.on-footer-p{
+  font-weight: bold;
+}
+.download-rec{
+  padding: 7px 10px;
+  background-color: rgb(72, 1, 72);
+  color: rgb(218, 217, 217);
+  border-radius: 7px;
+  border: 0;
+  outline: none;
+  margin-top: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.download-rec:hover{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
